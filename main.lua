@@ -1,5 +1,6 @@
 -- in load function the code runs once
 function love.load()
+  require("example")
   --a table to hold a list of reactangles
   listOfReactangels = {}
 end
@@ -39,5 +40,6 @@ function love.draw()
   for k,v in ipairs(listOfReactangels) do
     love.graphics.rectangle("line", v.x,v.y,v.w,v.h)
   end
+  love.graphics.print(text,400,300)
 end
 
