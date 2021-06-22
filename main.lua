@@ -1,14 +1,18 @@
 -- in load function the code runs once
+
+--local listOfReactangels = {}
 function love.load()
   require("example")
   --a table to hold a list of reactangles
   listOfReactangels = {}
-end
+  myColor = {0.3,0.9,1}
+  test = 10
+end 
 
 --function to create rectangles
 function createRect()
   --creating a table to hold the individual component of a rectangle
-  rect = {}
+  local rect = {}
 
   --setting up the values to rect table 
   rect.x = love.math.random(30,800)
@@ -23,7 +27,7 @@ end
 
 --when this function calls it will invoke createRect function 
 function love.keypressed(key)
-  if key == "space" then
+  if key == "up" then
     createRect()
   end
 end
@@ -37,9 +41,10 @@ function love.update(dt)
 
 
 function love.draw() 
+  love.graphics.setColor(myColor)
   for k,v in ipairs(listOfReactangels) do
     love.graphics.rectangle("line", v.x,v.y,v.w,v.h)
   end
-  love.graphics.print(text,400,300)
+  love.graphics.print(test,100 ,100)  
 end
 
