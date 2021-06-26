@@ -1,9 +1,8 @@
---The library "classic.lua"  Copyright (c) 2014, rxi
 
 function love.load()
-Object =  require "classic"
+Object =  require "classic" --this file imitates oop behaviour accross the program
 require "shape"
-require "circle"
+require "circle"    --refrences to indivdual files
 require "rectangle"
 obj1 = Circle(100,100,75)
 obj2 = Circle(300,300,85)
