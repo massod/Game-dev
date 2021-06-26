@@ -13,6 +13,11 @@ function love.update(dt)
     obj1:update(dt)
     obj2:update(dt)
     obj3:update(dt)
+    --reverse function
+    obj1:reverse()
+    obj2:reverse()
+    obj3:reverse()
+    
 end
 
 function love.draw()
