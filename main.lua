@@ -1,3 +1,4 @@
+--The library "classic.lua"  Copyright (c) 2014, rxi
 
 function love.load()
 Object =  require "classic"
