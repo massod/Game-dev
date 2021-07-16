@@ -46,3 +46,6 @@ function love.draw()
   love.graphics.print(posY,450,300)
 end
 
+--comments are vital part of any programing it must be included
+--comments helps you understand what the code does and helps to clear up the overall algorithms.
+
